@@ -50,7 +50,7 @@ def notificar(asunto, cuerpo):
         send_mail(
             subject=asunto,
             message='',
-            from_email='santiqu192@gmail.com', #TODO CAMBIAR
+            from_email='juanj.zarate05@gmail.com', #TODO CAMBIAR
             recipient_list=DESTINATARIOS,
             html_message=cuerpo,
             fail_silently=False,
