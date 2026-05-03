@@ -26,11 +26,11 @@ class Command(BaseCommand):
             </ul>
             """
 
-        destinatarios = ['santiqu192@gmail.com']
+        destinatarios = ['juanj.zarate05@gmail.com']
         send_mail(
             subject=f'Reporte Diario FinOps — {time.strftime("%Y-%m-%d")}',
             message='',
-            from_email='santiqu192@gmail.com', #TODO CAMBIAR
+            from_email='juanj.zarate05@gmail.com', #TODO CAMBIAR
             recipient_list=destinatarios,
             html_message=cuerpo,
             fail_silently=False,
