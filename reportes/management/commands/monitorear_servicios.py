@@ -13,7 +13,7 @@ SERVICIOS = [
 ]
 
 DESTINATARIOS = ['juanj.zarate05@gmail.com'] #TODO CAMBIAR
-ESTADO_FILE = '/home/ubuntu/miau/estado_servicios.json'
+ESTADO_FILE = '/home/ubuntu/ArquiSoft---Sprint3/estado_servicios.json'
 
 
 def verificar_puerto(host, puerto, timeout=3):
