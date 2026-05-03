@@ -12,7 +12,7 @@ SERVICIOS = [
     {"nombre": "MongoDB (nosqld-mongo)", "host": "172.31.47.158", "puerto": 27017},
 ]
 
-DESTINATARIOS = ['santiqu192@gmail.com'] #TODO CAMBIAR
+DESTINATARIOS = ['juanj.zarate05@gmail.com'] #TODO CAMBIAR
 ESTADO_FILE = '/home/ubuntu/miau/estado_servicios.json'
 
 
