@@ -181,6 +181,6 @@ EMAIL_BACKEND  = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST     = 'smtp.gmail.com'      # o SES si usas AWS
 EMAIL_PORT     = 587
 EMAIL_USE_TLS  = True
-EMAIL_HOST_USER     = 'santiqu192@gmail.com'  #cambiar por tu email real
-EMAIL_HOST_PASSWORD = 'tu_password_de_app'  # usar variable de entorno
+EMAIL_HOST_USER     = 'juanj.zarate05@gmail.com'  #cambiar por tu email real
+EMAIL_HOST_PASSWORD = 'lsbf xbdh epjo bhwe'  # usar variable de entorno
 
