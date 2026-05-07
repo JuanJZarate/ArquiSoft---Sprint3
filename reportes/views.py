@@ -55,27 +55,6 @@ def monitoreo_infra(request, usuario_id, proyecto_id):
         return JsonResponse({"error": "El usuario no pertenece a este proyecto."}, status=403)
 
     proyecto = usuario.proyecto
-    consumos = ConsumoMensual.objects.filter(proyecto=proyecto)
-
-    return JsonResponse({
-        "metrica": "ASR - Monitoreo Infraestructura",
-        "proyecto": proyecto.nombre,
-        "total_registros": consumos.count(),
-        "ultimo_mes": consumos.order_by('-anio', '-mes').values('mes', 'anio', 'costo_total').first(),
-    })
-    
-
-@require_auth('technical-team', 'project-leader')
-def monitoreo_infra(request, usuario_id, proyecto_id):
-    try:
-        usuario = Usuario.objects.get(id=usuario_id)
-    except Usuario.DoesNotExist:
-        return JsonResponse({"error": "Usuario no encontrado."}, status=404)
-
-    if not usuario.proyecto or usuario.proyecto.id != proyecto_id:
-        return JsonResponse({"error": "El usuario no pertenece a este proyecto."}, status=403)
-
-    proyecto = usuario.proyecto
 
     # Verificar integridad de los registros
     with connection.cursor() as cursor:
